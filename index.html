@@ -5,7 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body id="back">
+    <h1>Let's learn Javascript</h1>
+    <h2>Let's learn about onclick and alerts</h2>
+
+    <a href="https://www.youtube.com" 
+    onclick="alert('Warning! you are about to view the page')"
+    > Click here to go to youtube</a>
+
+
+    <h2>How do we display and hide text?</h2>
+    <h2>What's my secret identity</h2>
+    <p id="secret"></p>
+    <button onclick="
+    document .getElementById('secret').innerHTML='Whip the lasso, I am Wonder Woman'
+    document.getElementById('secret').style.display='block'
+
+    ">Reveal</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide
+    </button>
+
+
+    <h2>How do we change an image with Javascript</h2>
+    <img src="images/Light_on.jpg" id="myImage" style="height: 200px;width: 200px;">
     
+    <button
+    onclick="document.getElementById('myImage').src = 'images/Light_off.jpg'"
+    >Turn bulb off</button>
+     <button
+    onclick="document.getElementById('myImage').src = 'images/Light_on.jpg'"
+    >Turn bulb on</button>
+
+    <!-- Student Challenge: make a button to turn the light bulb back on-->
+
+    <h2>How do we change styles with a button?</h2>
+    <p id="Alice"> Hi am Alice</p>
+    <button
+    onclick="
+    
+    document.getElementById('Alice').style.color='blue';
+    document.getElementById('Alice').style.fontSize='8px'
+    "
+    >Cake - eat the cake to get small</button>
+
+    <button
+    onclick="
+    
+    document.getElementById('Alice').style.color='red';
+    document.getElementById('Alice').style.fontSize='30px'
+    "
+    >Potion - eat the potion to get big</button>
+
+
+    <h2 id="text">Custom Buttons</h2>
+
+    <button
+    onclick=" document.getElementById('text').style.visibility ='hidden'"
+    >Destory the text above</button>
+
+    <button
+    onclick=" document.getElementById('text').style.visibility ='visible'"
+    >Bring Text back</button>
+<br>
+<br>
+    <button
+    onclick=" document.getElementById('back').style.backgroundColor = 'red'"
+    >Make background red</button>
+    <button
+    onclick=" document.getElementById('back').style.backgroundColor = 'blue'"
+    >Make background blue</button>
+    <button
+    onclick=" document.getElementById('back').style.backgroundColor = 'white'"
+    >Make background default</button>
+
+
 </body>
+
+
 </html>
